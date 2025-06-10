@@ -1,0 +1,85 @@
+@import '../../styles/_variables.scss';
+
+.tap-form-title {
+  /* Replace with a valid color value or CSS variable */
+  color: #2c3e50; /* Example: use your desired color */
+  /* color: var(--db-tile-bg-color); */ /* If using CSS custom properties */
+}
+
+.tap-login-container {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  margin: auto auto;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 3px 6px 6px -1px rgba(0, 0, 0, .18);
+  /* height: 300px; */
+
+  /* glassmorphism effect */
+  background-color: rgba(255, 255, 255, 0.2); /* 20% opaque white */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px); /* for Safari */
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tap-forms-container {
+  padding: 20px 15px;
+  /* background: #fefefe; */
+  padding-bottom: 20px;
+  width: 400px;
+}
+
+.tap-img-container {
+  /* width: 220px; */
+  /* height: auto; */
+  /* min-height: 100%; */
+  /* background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+  background-image: url("/assets/images/allianz-logo-2.png");
+  /* background-size: cover; */
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media (max-width: 575.98px) {
+  .tap-forms-container {
+    width: auto !important;
+    /* or unset */
+  }
+
+  /* Smaller button styles for small screens */
+  .responsive-btn-container .responsive-btn {
+    height: 28px !important;
+    font-size: 12px !important;
+  }
+}
+
+body.my-feature-module {
+  min-height: 100vh;
+
+  background-image:
+    linear-gradient(to bottom, rgba(155, 176, 243, 0.95), rgba(255, 255, 255, 0.95));
+    /* url('/assets/images/allianz-logo-2.png'); */
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  /* background-attachment: scroll; */
+}
+
+@media (min-width: 768px) {
+  .w-md-75 {
+    width: 75% !important;
+  }
+
+  .tap-login-container{
+    height: 300px;
+  }
+}
